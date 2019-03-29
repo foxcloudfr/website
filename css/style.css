@@ -25,6 +25,7 @@
 }
 
 .start {
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -211,4 +212,33 @@
 .copyleft {
   display:inline-block;
   transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .social-network {
+    height: 20vh;
+  }
+  .mission-img {
+    display: none;
+  }
+  .mission-text {
+    width: 100%;
+    margin: 25px;
+  }
+  .tools {
+    font-size: 15px;
+    text-align: justify;
+  }
+  .tools p {
+    padding: 10px;
+  }
+  .start img {
+    display: none;
+  }
+  .start {
+    text-align: center;
+  }
+  .oblique {
+    display: none;
+  }
 }
