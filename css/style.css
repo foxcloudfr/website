@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'OpenSansLight';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/OpenSans-Light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/OpenSans-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/OpenSans-Regular.ttf') format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.start {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(4,19,43,0.7),rgba(4,19,43,0.7)), url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.start-element {
+  width: 60vh;
+  display: block;
+  margin: auto;
+}
+
+.start-text {
+  color: white;
+  font-size: 40px;
+  vertical-align: middle;
+  padding: 10px;
+  font-family: 'OpenSansLight', sans-serif;
+}
+
+.start img {
+  width: 30%;
+  vertical-align:middle;
+}
+
+.text_under {
+  text-align: center;
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  right: 0;
+}
+
+.icon-scroll, .icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  from {
+  0%;
+  opacity: 1;
+}
+  to {
+    100%;
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+.mission {
+  display: flex;
+  flex-direction: row;
+  background-color: #04132b;
+}
+
+.mission-img {
+  width: 40%;
+  background-image: url('../img/background-mission.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.mission-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+  text-align: justify;
+  font-size: 18px;
+  font-family: 'OpenSansRegular', sans-serif;
+  color: white;
+}
+
+.mission-title {
+  padding-bottom: 20px;
+  font-family: 'OpenSansBold', sans-serif;
+}
+
+.social-network {
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #4a4b4c;
+}
+
+.social-text {
+  margin: 0 auto;
+  font-size: 20px;
+  color: white;
+  font-family: 'OpenSansBold', sans-serif;
+  padding-bottom: 10px;
+}
+
+.social-brand {
+  margin: 0 auto;
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+.social-brand a {
+  color: white;
+  transition: 0.3s;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+    transition: 0.3s;
+}
+
+.fa-github:hover {
+  color: black;
+  transition: 0.3s;
+}
+
+.fa-discord:hover {
+  color: #7289DA;
+  transition: 0.3s;
+}
+
+.tools {
+  background-image: linear-gradient(rgba(4,19,43,0.7),rgba(4,19,43,0.7)), url('../img/world.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tools p {
+  margin: 0 auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10vh;
+  font-family: 'OpenSans', sans-serif;
+  color: white;
+  background-color: #4a4b4c;
+}
+
+.footer p {
+  margin: 0 auto;
+}
+
+.footer a {
+  color: white;
+}
+
+.copyleft {
+  display:inline-block;
+  transform: rotate(180deg);
+}
